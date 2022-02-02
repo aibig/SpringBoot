@@ -26,7 +26,7 @@ class MemberServiceIntegrationTest {
 
     @Test
     void join() {
-        //given
+        //given`
         Member member = new Member();
         member.setName("hello");
 
