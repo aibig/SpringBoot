@@ -1,3 +1,5 @@
+
+/* h2 database 사용시 생성 쿼리 */
 drop table if exists member CASCADE;
 create table member
 (
@@ -5,3 +7,11 @@ create table member
     name varchar(255),
     primary key(id)
 );
+
+/* Mysql database 사용시 생성 쿼리 */
+drop table if exists member cascade;
+CREATE TABLE `member` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3;
